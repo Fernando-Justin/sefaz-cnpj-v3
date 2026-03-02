@@ -1,0 +1,28 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+
+# Variáveis de ambiente reais (nunca versionar)
+.env
+
+# Certificados digitais (nunca versionar — segurança crítica)
+certs/*.pfx
+certs/*.p12
+certs/*.pem
+certs/*.key
+certs/*.crt
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+/* CSS Global — Importa o Tailwind e define estilos base para o projeto */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-gray-50 text-gray-800;
+  font-family: "Inter", sans-serif;
+}
