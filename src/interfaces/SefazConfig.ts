@@ -8,7 +8,7 @@ import https from 'https'
  * Os valores devem ser injetados via variáveis de ambiente (.env) — nunca hardcoded.
  */
 export interface SefazConfig {
-  /** URL completa do WSDL do WebService de ConsultaCadastro da UF (ex: SP) */
+  /** URL completa do WSDL do WebService de ConsultaCadastro da UF (ex: MG) */
   wsdlUrl: string;
 
   /**
@@ -20,6 +20,6 @@ export interface SefazConfig {
   /** Timeout máximo (ms) para a chamada SOAP. Após esse limite gera erro de timeout */
   timeoutMs: number;
 
-  /** UF de destino da consulta (ex: "SP") */
+  /** UF de destino da consulta (ex: "MG") */
   uf: string;
 }

@@ -2,7 +2,7 @@
 // O SRD define SP como escopo inicial; estrutura preparada para expansão futura
 
 /** Lista de UFs habilitadas para consulta. Expandir conforme novos WSDLs forem configurados. */
-const SUPPORTED_UFS = ['SP'] as const
+const SUPPORTED_UFS = ['MG'] as const
 
 export type SupportedUf = typeof SUPPORTED_UFS[number]
 

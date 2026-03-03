@@ -25,7 +25,7 @@ export async function getCompanyByCnpj(
     if (!isValidUf(uf)) {
       res.status(400).json({
         error: 'UF_INVALIDA',
-        message: `A UF "${uf}" não é suportada. UFs disponíveis: SP`,
+        message: `A UF "${uf}" não é suportada. UFs disponíveis: MG`,
       })
       return
     }
@@ -41,6 +41,14 @@ export async function getCompanyByCnpj(
 
     // Chama a camada de Service (SRD §2 MVC)
     const companyData = await sefazService.query(cnpjNormalized, uf)
+
+    console.log('\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+    console.log('✅ [RESPONSE] Retornando dados validados ao cliente')
+    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━')
+    console.log('📤 Status HTTP: 200')
+    console.log('📋 Payload:')
+    console.log(JSON.stringify(companyData, null, 2))
+    console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n')
 
     res.status(200).json(companyData)
   } catch (err) {

@@ -11,7 +11,7 @@
 
 **Sefaz CNPJ v3** é uma solução _Fullstack_ (Backend Node.js + Frontend React) de alta performance projetada para simplificar a vida de desenvolvedores e usuários na consulta de dados de Pessoas Jurídicas (PJ).
 
-O sistema encapsula a complexidade do protocolo SOAP exigido pelo WebService da Secretaria da Fazenda (SEFAZ) do estado de São Paulo, provendo uma interface Web moderna, limpa e segura, que realiza a autenticação máquina-a-máquina (mTLS) utilizando um Certificado Digital corporativo (A1).
+O sistema encapsula a complexidade do protocolo SOAP exigido pelo WebService da Secretaria da Fazenda (SEFAZ) do estado de Minas Gerais, provendo uma interface Web moderna, limpa e segura, que realiza a autenticação máquina-a-máquina (mTLS) utilizando um Certificado Digital corporativo (A1).
 
 ---
 
@@ -96,7 +96,7 @@ cp .env.example .env
 Para trabalhar no Frontend ou lógicas de controller sem precisar do certificado real:
 
 ```env
-SEFAZ_WSDL_URL_SP=https://ws.fazenda.sp.gov.br/ws/cadconsultacadastro4.asmx?wsdl
+SEFAZ_ENDPOINT_MG=https://nfe.fazenda.mg.gov.br:443/nfe2/services/CadConsultaCadastro4
 CERT_PATH=certs/certificado.pfx
 CERT_PASS=1234
 MOCK_SEFAZ=true # <--- Muito importante para testar sem o token real

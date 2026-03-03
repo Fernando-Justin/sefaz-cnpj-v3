@@ -21,7 +21,7 @@ function maskCnpj(value: string): string {
 
 export function CompanyForm({ onSubmit, loading }: CompanyFormProps) {
   const [cnpj, setCnpj] = useState('')
-  const [uf, setUf] = useState('SP')
+  const [uf, setUf] = useState('MG')
   const [error, setError] = useState('')
 
   function handleChangeCnpj(value: string) {
@@ -69,7 +69,7 @@ export function CompanyForm({ onSubmit, loading }: CompanyFormProps) {
           className="w-full border border-gray-300 rounded-lg px-4 py-2 text-base focus:outline-none focus:ring-2 focus:ring-blue-500"
           disabled={loading}
         >
-          <option value="SP">SP - São Paulo</option>
+          <option value="MG">MG - Minas Gerais</option>
         </select>
       </div>
 

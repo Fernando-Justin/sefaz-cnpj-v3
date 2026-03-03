@@ -17,7 +17,7 @@ Cada fase é rastreável a um requisito do PRD/SRD e implementada na sequência 
 - [ ] Configurar `tsconfig.json` com strict mode para backend e frontend.
 - [ ] Instalar todas as dependências listadas no `context.md`.
 - [ ] Configurar Vite para bundling do React + Tailwind (Frontend).
-- [ ] Criar `.env.example` com todas as variáveis (`PORT`, `CERT_PATH`, `CERT_PASS`, `SEFAZ_WSDL_URL_SP`, `SOAP_TIMEOUT_MS`).
+- [ ] Criar `.env.example` com todas as variáveis (`PORT`, `CERT_PATH`, `CERT_PASS`, `SEFAZ_ENDPOINT_MG`, `SOAP_TIMEOUT_MS`).
 - [ ] Criar `.gitignore` — incluir `certs/`, `.env` e `node_modules/`.
 - [ ] Criar pasta `certs/` com `.gitkeep` para recepcionar o arquivo `.pfx`.
 

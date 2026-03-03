@@ -33,7 +33,7 @@
 
 - `PORT`: Porta de execução (ex: 3000).
 - `NODE_ENV`: Contexto atual (`development` | `production`).
-- `SEFAZ_WSDL_URL_SP`: Endpoint absoluto para o WSDL Estadual (SP).
+- `SEFAZ_ENDPOINT_MG`: Endpoint absoluto para o WSDL Estadual (MG).
 - `CERT_PATH`: Caminho físico absoluto/relativo no servidor apontando para o arquivo físico `.pfx` ou `.p12`.
 - `CERT_PASS`: Senha criptográfica para desbloquear a chave privada do certificado.
 - `SOAP_TIMEOUT_MS`: Threshold de falha (Valor padrão fixado no SRD em `15000` / 15 segundos).
